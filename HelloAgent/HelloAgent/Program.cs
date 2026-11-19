@@ -19,6 +19,12 @@ AIAgent agent = chatClient.AsAIAgent(
     instructions: "You are a helpful support agent. Answer the user's questions to the best of your ability."
     );
 
+// Alternative initialization using API Key 
+//AIAgent agent = new AzureOpenAIClient(
+//new Uri(endpoint),
+//new ApiKeyCredential(apikey)) .GetChatClient(model)
+//AsAIAgent (instructions: "You are a friendly assistant. Keep your answers brief.");
+
 Console.WriteLine($"Agent '{agent.Name}' is online.");
 
 string userInput = "PM of India";
